@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffe188;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 25px 0;
+}
+
+.title-main {
+    color: #ff3d3d;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: min(calc(75vw - 20px), 30px);;
+}
+
+.roundBorder {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#tasksContainer {
+    background-color: white;
+    width: min(calc(75vw - 20px), 250px);
+    height: 250px;
+    margin-top: 75px;
+    border-radius: 10px;
+}
+
+.addTaskButton {
+    border: none;
+    background-color: #9aff95;
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: #bebebe -1px 1px, #bebebe -2px 2px, #bebebe -3px 3px, #bebebe -4px 4px;
+    animation: botonFlotante 1s linear infinite;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+@keyframes botonFlotante {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+.orderButton {
+    border: 0;
+    background-color: #ffbd71;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: #bebebe -1px 1px, #bebebe -2px 2px, #bebebe -3px 3px, #bebebe -4px 4px;
+    cursor: pointer;
+}
+
+.orderButton:active {
+    transform: translateY(-10px);
+}
